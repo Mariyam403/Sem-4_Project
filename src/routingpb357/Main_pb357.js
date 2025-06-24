@@ -14,6 +14,23 @@ import Contact from './Contact';
 import Shop from './Shop';
 
 const Pb357 = () =>{
+        return(
     <Router>
-        <nav className='nav navbar-expand-lg
+        <nav className='nav navbar-expand-lg navbar-dark bg-dark>
+                <ul className='nav navbar-nav'>
+                        <li><Link to='/'>No page</Link></li>
+                        <li><Link to='/Home'>Home</Link></li>
+                        <li><Link to='/Shop'>Shop</Link></li>
+                        <li><Link to = '/Contact'>Contact</Link></li>
+                </ul>
+        </nav>
+        <Routes>
+                <Route path='/' element={<Nopage/>}/>
+                <Route path='/Home' element={<Home/>}/>
+                <Route path='/Contact' element={<Contact/>}/>
+                <Route path='/Shop' element={<Shop/>}/>
+        </Routes>
+</Router> )
 }
+
+export default Pb357
