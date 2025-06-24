@@ -29,7 +29,7 @@ const Main_pb372=()=>{
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/Product' element={<Product products={products}/>}/>
-                <Route path='/Contact' lement={<Contact/>}/>
+                <Route path='/Contact' element={<Contact/>}/>
             </Routes>
         </Router>
     )
